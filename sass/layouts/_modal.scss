@@ -18,6 +18,7 @@
         width: 100vw;
         height: 100vh;
         background-color: white;
+        
             top: 50%;
             left: 50%;
             opacity: 1;
@@ -28,16 +29,20 @@
     @include mobile{
         width: 450px;
         height: 609px;
+        padding:  40px;
+            
     }
  
     @include tablet{
         width: 450px;
         height: 609px;
+        padding: 40px;
     }
 
     @include desktop{
         height: 581px;
         width: 528px;
+        padding:  40px;
     }
 
 
@@ -52,9 +57,12 @@
 .btn-close {
     display: block;
     display: flex;
-
+@media screen and (max-width:479px) {
     margin-right: 8px;
-    margin-top: 8px;
+        margin-top: 8px;
+}
+    margin-right: -32px;
+    margin-top: -32px;
     margin-left: auto;
 
     width: 30px;
@@ -96,18 +104,19 @@
     margin-left: 5px;
     margin-right: 5px;
 
+
     @include mobile{
-        width: 450px;
-            height: 609px;
+        width: calc(450px - 80px);
+           
             margin: 0;
-            margin-left: 15px;
+          
     }
 
     @include tablet{
-        width: 450px;
-            height: 609px;
+        width: calc(450px - 80px);
+            height: calc(609px - 80px);
             margin: 0;
-            margin-left: 41px;
+           
     }
 
     @include desktop{
@@ -226,6 +235,8 @@
 
 
 .btn-agree {
+
+   
     display: block;
     width: 200px;
     height: 50px;
@@ -273,13 +284,8 @@
     
     align-items: center;
 
-    @include mobile {
-      margin-left: 25px;
-    }
-
-    @include desktop{
-       justify-content: center;
-    }
+   
+    
 
     &__text{
         margin-left: -6px;
@@ -299,11 +305,13 @@
             -moz-appearance: none;
             -ms-progress-appearance: none;
             position: absolute;
+            
     
     
         }
     
         &__img {
+            
             display: inline-block;
     
             width: 16px;
@@ -345,6 +353,8 @@
 
 
 .agreement__img--before {
+
+    
     display: block;
     height: 15px;
     width: 16px;
