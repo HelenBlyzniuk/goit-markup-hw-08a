@@ -571,6 +571,11 @@ h3 {
     margin-bottom: 30px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .team-list__item {
+    width: 270px;
+  }
+}
 @media screen and (max-width: 767px) {
   .team-list__item:not(:last-of-type) {
     margin: 0;
