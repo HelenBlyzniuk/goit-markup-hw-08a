@@ -1,0 +1,60 @@
+:root {
+  --main-text-color: #757575;
+  --title-color: #212121;
+  --active-element-color: #2196f3;
+  --additional-color: #ffffff;
+  --footer-color: #2f303a;
+}
+
+@media screen and (max-width: 1199px) {
+  .about {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 94px;
+  }
+  .about__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin: 0;
+  }
+  .about__pictures {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-top: 50px;
+  }
+}
+.about .about__pic {
+  display: block;
+}
+.about .about__pic:not(:last-child) {
+  margin-right: 30px;
+}
+.about .about__overlay {
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  width: 370px;
+  height: 70px;
+  background-color: #2F303A;
+  opacity: 0.8;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-top: 27px;
+  color: var(--additional-color);
+}
+.about .about__overlay-wrapper {
+  position: relative;
+}/*# sourceMappingURL=main.css.map */
