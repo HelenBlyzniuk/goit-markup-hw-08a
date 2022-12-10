@@ -1,0 +1,184 @@
+.team {
+    @include mobile{
+        padding: 60px 15px;
+         
+    }
+
+    @include tablet{
+        padding: 60px 15px;
+    }
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: #F5F4FA;
+
+    &__title {
+
+    text-align: center;
+    font-weight: 700;
+    margin-top: 0;
+    color: #212121;
+
+        @include mobile {
+    margin-bottom: 30px;
+        font-size: 28px;
+        line-height: calc(33/28);
+    
+            }
+
+            @include desktop{
+        font-size: 36px;
+        line-height: 1.17;
+        
+            }
+
+    }
+
+    &__name {
+        margin: 0;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.2;
+
+        text-align: center;
+        
+    }
+
+    &__position {
+        margin-top: 10px;
+        margin-left: 0;
+        margin-bottom: 0;
+        margin-right: 0;
+        font-size: 16px;
+        line-height: 1.19;
+
+        text-align: center;
+    }
+
+    &__description {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+
+
+}
+
+
+
+.team-list {
+    @media screen and (max-width:767px) {
+     display:block; 
+     
+    }
+
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+    @include tablet{
+        flex-wrap: wrap;
+
+    }
+
+    &__item {
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        background-color: var(--additional-color);
+
+        @include mobile{
+            width:450px;
+        }
+
+         @include tablet {
+            width: 354px;
+            margin-bottom: 30px;
+             }
+
+        &:not(:last-of-type) {
+        @media screen and (max-width:767px) {
+            margin: 0;
+            margin-bottom: 30px;
+             
+            }
+            @include desktop{
+            margin-right: 30px;
+            }
+           
+        }
+       &:not(:nth-of-type(2n)){
+        @include tablet{
+            margin-right: 30px;
+        }
+       
+       }
+
+       
+    }
+  &__img{
+    @media screen and (max-width:479px){
+    margin: 0 auto;
+    }
+    
+    
+  }
+
+}
+
+
+
+.icon__list {
+    list-style: none;
+    display: flex;
+    margin-top: 16px;
+
+    @media screen and (max-width:479px) {
+        justify-content: center;
+    }
+        @include mobile {
+            margin: 16px 122px 24px 122px;
+        }
+        @include tablet {
+        margin: 16px 74px 24px 74px;
+                 }
+        @include desktop{
+        margin-left: 32px;
+            padding: 0;
+        }         
+    
+
+}
+
+
+.icon__item:not(:last-of-type) {
+    margin-right: 10px;
+}
+
+.icon__soc-net {
+    display: block;
+    margin: 12px auto;
+
+}
+
+.icon__link {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    color: var(--main-text-color);
+    fill: #AFB1B8;
+    border: none;
+    background-color: var(--additional-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+
+        fill: var(--additional-color);
+        border-radius: 50%;
+        border-color: rgba(33, 150, 243, 1) 1px solid;
+        background-color: rgba(33, 150, 243, 1);
+
+    }
+}
