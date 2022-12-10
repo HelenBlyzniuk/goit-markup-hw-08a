@@ -1,2 +1,14 @@
 @import './utils/vars';
+@import './base/reset';
+@import './base/container';
+@import './base/body';
+@import './base/img';
+
+@import './mixins/mixin';
+@import './utils/logo';
+@import './layouts/btn-main';
+
+@import './layouts/modal';
+
+@import './layouts/hero';
 @import './layouts/about';
