@@ -1,4 +1,6 @@
 .team {
+
+    background-color: #F5F4FA;
     @include mobile{
         padding: 60px 15px;
          
@@ -7,9 +9,12 @@
     @include tablet{
         padding: 60px 15px;
     }
+
+    @include desktop{
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: #F5F4FA;
+}
+    
 
     &__title {
 
@@ -77,7 +82,10 @@
 
     @include tablet{
         flex-wrap: wrap;
+    }
 
+    @include desktop{
+        flex-wrap: nowrap;
     }
 
     &__item {
@@ -119,10 +127,10 @@
        
     }
   &__img{
-    @media screen and (max-width:479px){
+    @media screen and (max-width:1200px){
     margin: 0 auto;
     }
-    
+        
     
   }
 
