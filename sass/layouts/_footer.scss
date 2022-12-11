@@ -22,26 +22,27 @@ footer {
 
 .container-address {
     @media screen and (max-width:767px) {
-       display:block;
-       
+        display: flex;
+        flex-direction: column;
+       justify-content:center;
        
     }
     @include tablet{
        display: flex;
+       flex-direction: row;
     }
    
 }
 
 .address-wrapper{
     @media screen and (max-width:767px) {
-            width: 232px;
-            
+            width: 232px; 
         }
 }
 
 
 address {
-    display: inline-block;
+    display: block;
     color: var(--additional-color);
     font-style: normal;
     line-height: 1.71;
@@ -49,20 +50,27 @@ address {
 
     @media screen and (max-width:767px) {
         margin-bottom: 60px;
+       justify-content: center;
+        width:232px;
         
     }
 }
 
 .contacts-footer {
 
-    display: inline-block;
+    display: block;
     margin: 0;
     margin-top: 10px;
     padding: 0;
+    @media screen and (max-width:767px) { 
+            
+         justify-content: center;
+
+        }
 }
 
 .contact-footer-item {
-
+   
     color: rgba(255, 255, 255, 0.6);
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -114,7 +122,7 @@ address {
 .join {
     @media screen and (max-width:767px) {
             width:206px;
-            
+            margin:0 auto;
         }
 
    @include desktop{
@@ -140,6 +148,13 @@ address {
 }
 
 .sign-up__form {
+    @media screen and (max-width:767px) {
+          margin-top: 60px;
+          margin-bottom:0;
+          margin-left:auto;
+          margin-right: auto;
+          
+        }
     margin-left: 93px;
     margin-top: 12px;
     margin-bottom: 0;
