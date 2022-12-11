@@ -850,8 +850,6 @@ footer {
   background-color: var(--footer-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 @media screen and (max-width: 479px) {
   footer {
@@ -861,36 +859,53 @@ footer {
 @media screen and (min-width: 480px) {
   footer {
     max-width: 480px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 768px) {
   footer {
     max-width: 768px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1200px) {
   footer {
     max-width: 1600px;
+    margin: 0 auto;
   }
 }
 
 @media screen and (max-width: 767px) {
   .container-address {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: block;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .container-address {
     display: flex;
-    flex-direction: row;
   }
 }
 
 @media screen and (max-width: 767px) {
   .address-wrapper {
     width: 232px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tablet--wrapper {
+    display: flex;
+    justify-content: center;
+    -moz-column-gap: 165px;
+         column-gap: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tablet--wrapper {
+    justify-content: flex-start;
+    -moz-column-gap: 70px;
+         column-gap: 70px;
   }
 }
 
@@ -901,11 +916,16 @@ address {
   line-height: 1.71;
   margin-top: 20px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   address {
     margin-bottom: 60px;
-    justify-content: center;
+    text-align: center;
     width: 232px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  address {
+    display: inline-block;
   }
 }
 
@@ -917,7 +937,7 @@ address {
 }
 @media screen and (max-width: 767px) {
   .contacts-footer {
-    justify-content: center;
+    text-align: center;
   }
 }
 
@@ -937,6 +957,8 @@ address {
 @media screen and (max-width: 1199px) {
   .footer-logo {
     display: block;
+    margin: 0;
+    text-align: center;
   }
 }
 
@@ -965,7 +987,6 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .join {
-    margin-left: 70px;
     margin-top: 12px;
   }
 }
@@ -980,19 +1001,26 @@ address {
   margin: 0;
   margin-bottom: 20px;
 }
-
-.sign-up__form {
-  margin-left: 93px;
-  margin-top: 12px;
-  margin-bottom: 0;
-  margin-right: 0;
+@media screen and (max-width: 1199px) {
+  .join__title {
+    text-align: center;
+  }
 }
-@media screen and (max-width: 767px) {
+
+@media screen and (max-width: 1199px) {
   .sign-up__form {
     margin-top: 60px;
     margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sign-up__form {
+    margin-left: 93px;
+    margin-top: 12px;
+    margin-bottom: 0;
+    margin-right: 0;
   }
 }
 
@@ -1008,17 +1036,27 @@ address {
   text-transform: uppercase;
   color: #FFFFFF;
 }
+@media screen and (max-width: 1199px) {
+  .sign-up__title {
+    text-align: center;
+  }
+}
 
 .sign-up-submit,
 .sign-up__input {
   display: inline-block;
 }
+@media screen and (max-width: 1199px) {
+  .sign-up-submit,
+.sign-up__input {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .sign-up__input {
   padding-left: 16px;
-  width: 358px;
   height: 50px;
-  width: 358px;
   background-color: #2F303A;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -1029,6 +1067,26 @@ address {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (max-width: 479px) {
+  .sign-up__input {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .sign-up__input {
+    display: block;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sign-up__input {
+    display: inline-block;
+    width: 358px;
+    margin: 0;
+  }
 }
 
 .btn__sign-up {
@@ -1049,6 +1107,21 @@ address {
   text-align: left;
   letter-spacing: 0.06em;
   color: #FFFFFF;
+}
+@media screen and (max-width: 1199px) {
+  .btn__sign-up {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn__sign-up {
+    display: inline-block;
+    margin: 0;
+  }
 }
 .btn__sign-up:hover {
   cursor: pointer;
