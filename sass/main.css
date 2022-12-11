@@ -584,19 +584,34 @@ h3 {
   margin: 0;
   padding: 0;
 }
-@media screen and (max-width: 747px) {
-  .services {
-    display: block;
-  }
-}
 @media screen and (max-width: 479px) {
   .services {
     width: 100%;
+    display: block;
+  }
+}
+@media screen and (min-width: 480px) {
+  .services {
+    width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
   .services {
     display: flex;
+    flex-wrap: wrap;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+    row-gap: 30px;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services {
+    display: flex;
+    flex-wrap: nowrap;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    row-gap: 0;
   }
 }
 .services__image {
@@ -609,12 +624,14 @@ h3 {
 @media screen and (max-width: 479px) {
   .services__image {
     width: 100%;
+    height: 120px;
   }
 }
 @media screen and (min-width: 480px) {
   .services__image {
     width: 450px;
     height: 120px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -648,18 +665,55 @@ h3 {
   margin: 0;
   margin-top: 30px;
 }
+@media screen and (max-width: 479px) {
+  .services__title {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 480px) {
+  .services__title {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .services__title {
+    text-align: start;
+  }
+}
 .services__text {
   margin: 0;
   padding-top: 10px;
   line-height: 1.7142857143;
 }
 @media screen and (max-width: 479px) {
+  .services__text {
+    padding-left: 15px;
+  }
+}
+@media screen and (max-width: 479px) {
   .services__item {
     width: 100%;
   }
 }
-.services__item:not(:last-of-type) {
-  margin-bottom: 30px;
+@media screen and (min-width: 480px) {
+  .services__item {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .services__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services__item {
+    width: 270px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .services__item:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .services__item:not(:last-of-type) {
