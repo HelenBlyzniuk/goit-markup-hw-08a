@@ -1,0 +1,36 @@
+
+
+.examples {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__title {
+            margin: -1;
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            border: 0;
+            padding: 0;
+            white-space: nowrap;
+            clip-path: inset(100%);
+            clip: rect(0 0 0 0);
+            overflow: hidden;
+    
+    
+        }
+}
+
+.work__list {
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+
+}
+
+.work__item:not(:last-child) {
+    margin-right: 8px;
+
+}
+
+
