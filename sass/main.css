@@ -1394,9 +1394,12 @@ address {
   margin-left: 0;
   margin-right: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+}
+@media screen and (max-width: 479px) {
+  .examples__list {
+    display: block;
+    width: 100%;
+  }
 }
 
 .examples__item {
@@ -1404,6 +1407,11 @@ address {
   padding: 0;
   margin: 0;
   flex-basis: calc((100% - 60px) / 3);
+}
+@media screen and (max-width: 479px) {
+  .examples__item {
+    width: 100%;
+  }
 }
 
 .examples__text {
