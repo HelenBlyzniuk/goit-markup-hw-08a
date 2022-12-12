@@ -6,8 +6,15 @@
         padding-bottom: 60px;
         width:100vw;
     }
+    @include mobile{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @include desktop{
     padding-top: 94px;
     padding-bottom: 94px;
+    }
+    
 
     &__title {
             margin: -1;

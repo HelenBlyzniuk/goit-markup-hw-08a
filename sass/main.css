@@ -1333,15 +1333,23 @@ address {
   right: 28px;
 }
 
-.examples {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 @media screen and (max-width: 479px) {
   .examples {
     padding-top: 60px;
     padding-bottom: 60px;
     width: 100vw;
+  }
+}
+@media screen and (min-width: 480px) {
+  .examples {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .examples {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 .examples__title {
