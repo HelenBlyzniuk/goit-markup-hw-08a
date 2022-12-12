@@ -789,6 +789,8 @@ h3 {
   .team {
     padding-top: 94px;
     padding-bottom: 94px;
+    max-width: 1600px;
+    margin: 0 auto;
   }
 }
 .team__title {
@@ -1052,18 +1054,6 @@ footer {
     width: 100%;
   }
 }
-@media screen and (min-width: 480px) {
-  footer {
-    max-width: 480px;
-    margin: 0 auto;
-  }
-}
-@media screen and (min-width: 768px) {
-  footer {
-    max-width: 768px;
-    margin: 0 auto;
-  }
-}
 @media screen and (min-width: 1200px) {
   footer {
     max-width: 1600px;
@@ -1117,11 +1107,6 @@ address {
     margin-bottom: 60px;
     text-align: center;
     width: 232px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  address {
-    display: inline-block;
   }
 }
 
@@ -1317,6 +1302,7 @@ address {
   .btn__sign-up {
     display: inline-block;
     margin: 0;
+    margin-left: 12px;
   }
 }
 .btn__sign-up:hover {
