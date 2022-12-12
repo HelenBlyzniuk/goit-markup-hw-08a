@@ -1430,16 +1430,41 @@ address {
   margin: 0;
   display: block;
 }
+@media screen and (max-width: 479px) {
+  .examples__pic {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .examples__pic {
+    width: 100%;
+  }
+}
+
 .examples__link {
   padding: 0;
   margin: 0;
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 370px;
 }
 @media screen and (max-width: 479px) {
   .examples__link {
     width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .examples__link {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .examples__link {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .examples__link {
+    width: 370px;
   }
 }
 .examples__link:hover {
@@ -1447,10 +1472,6 @@ address {
 }
 
 .examples__list {
-  margin-top: 50px;
-  margin-bottom: 0px;
-  margin-left: 0;
-  margin-right: 0;
   padding: 0;
 }
 @media screen and (max-width: 479px) {
@@ -1459,16 +1480,63 @@ address {
     width: 100%;
   }
 }
+@media screen and (min-width: 480px) {
+  .examples__list {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .examples__list {
+    display: flex;
+    flex-wrap: wrap;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+    row-gap: 30px;
+    width: 738px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .examples__list {
+    width: 1170px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    justify-content: center;
+  }
+}
 
 .examples__item {
   border-bottom: 1px solid #EEEEEE;
   padding: 0;
   margin: 0;
-  flex-basis: calc((100% - 60px) / 3);
 }
 @media screen and (max-width: 479px) {
   .examples__item {
     width: 100%;
+  }
+}
+@media screen and (min-width: 480px) {
+  .examples__item {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .examples__item {
+    width: 354px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .examples__item {
+    width: 370px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
