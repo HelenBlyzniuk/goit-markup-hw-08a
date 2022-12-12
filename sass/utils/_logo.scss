@@ -1,6 +1,6 @@
 .logo {
     display: inline-block;
-    margin-right: 93px;
+   
     color: var(--active-element-color);
     text-decoration: none;
 
@@ -11,6 +11,8 @@
     letter-spacing: 0.03em;
 
     @media screen and (min-width:768px) {
-        margin-right: 88px;
+        margin-right: 86px;
+        
     }
+         margin-right: 93px;
 }
