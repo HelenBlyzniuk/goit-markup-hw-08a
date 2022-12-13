@@ -41,6 +41,7 @@ footer {
         display:flex;
         justify-content: center;
         column-gap: 165px;
+        height: 127px;
     }
     @include desktop{
         justify-content: flex-start;
