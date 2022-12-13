@@ -1756,7 +1756,7 @@ address {
          column-gap: 30px;
     row-gap: 30px;
     width: 738px;
-    justify-content: center;
+    justify-content: flex-start;
   }
 }
 @media screen and (min-width: 1200px) {
