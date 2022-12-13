@@ -28,6 +28,7 @@
                     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
                         url('../../images/hero_tab_2x.jpg');
                 }
+
     }
 
     @include tablet{
@@ -35,16 +36,17 @@
                 url('../images/hero.jpg');
             background-color: #2F303A66;
             max-width:1600px;
-            
+
             @media (min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx) {
                     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                        url('../images/hero_2x.jpg');
+                        url('../images/_hero_2x.jpg');
                 }
     }
 
     @include desktop{
+       
             
             max-height: 600px;
             padding-top: 200px;
