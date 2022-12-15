@@ -1,8 +1,10 @@
 .team {
 
+    padding: 60px 0;
+      
     background-color: #F5F4FA;
     @include mobile{
-        padding: 60px 15px;
+        padding: 60px 0;
         
          
     }
