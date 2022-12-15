@@ -71,11 +71,6 @@ img {
   letter-spacing: 0.03em;
   margin-right: 93px;
 }
-@media screen and (max-width: 479px) {
-  .logo {
-    margin-left: 15px;
-  }
-}
 @media screen and (min-width: 768px) {
   .logo {
     margin-right: 86px;
