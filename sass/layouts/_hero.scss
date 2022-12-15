@@ -1,6 +1,6 @@
 .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../../images/hero_mob.jpg');
+        url('../images/hero_mob.jpg');
     background-color: #2F303A66;
     margin: 0 auto;
     background-repeat: no-repeat;
@@ -26,7 +26,7 @@
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx) {
                     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                        url('../../images/hero_tab_2x.jpg');
+                        url('../images/hero_tab_2x.jpg');
                 }
 
     }
