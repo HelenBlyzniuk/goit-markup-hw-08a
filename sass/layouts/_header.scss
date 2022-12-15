@@ -338,6 +338,9 @@ header {
 
 
 .contacts__item:not(:last-child) {
+    @include tablet{
+        margin-bottom: 10px;
+    }
     @include desktop {
         margin-right: 50px;
     }
