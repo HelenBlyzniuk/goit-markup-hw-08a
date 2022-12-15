@@ -464,12 +464,14 @@ header {
     height: 100vh;
     background-color: var(--additional-color);
     position: absolute;
+    z-index: 99;
     top: 0;
     left: 0;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 48px;
     opacity: 1;
+    transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 @media screen and (min-width: 480px) {
@@ -478,12 +480,14 @@ header {
     height: 796px;
     background-color: var(--additional-color);
     position: absolute;
+    z-index: 99;
     top: 0;
     left: 0;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 48px;
     opacity: 1;
+    transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 @media screen and (min-width: 768px) {
@@ -517,8 +521,8 @@ header {
 .mobile-menu__close {
   display: block;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 0px;
+  right: 0px;
   padding: 0;
   width: 40px;
   height: 40px;
@@ -538,7 +542,6 @@ header {
 .mobile-menu__open {
   display: block;
   margin-right: 15px;
-  margin-top: 10px;
   margin-left: auto;
   padding: 0;
   width: 40px;
